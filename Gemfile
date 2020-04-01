@@ -30,6 +30,7 @@ gem 'rails-ujs'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'font-awesome-sass'
 gem 'animate.css-rails'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
