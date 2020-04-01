@@ -6,9 +6,8 @@ $text-primary: #3d3d3d;
 $text-secondary: #747d8c;
 $text-white: #f1f2f6;
 $bg: #f3eed3;
-
 .featured-works {
-    margin-bottom: 100px;
+    padding: 0 50px;
 }
 .detail {
     display: none;
@@ -20,13 +19,10 @@ $bg: #f3eed3;
     color: $primary-color;
     text-align: center;
     background: rgba(0,0,0,0.6);
-    padding-top: 150px;
+    padding-top: 50vh;
     a {
         color: $primary-color;
       }
-}
-.carousel {
-    margin: 20px 200px;
 }
 .project {
         position: relative;

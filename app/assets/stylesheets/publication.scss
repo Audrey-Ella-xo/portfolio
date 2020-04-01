@@ -7,8 +7,12 @@ $text-secondary: #747d8c;
 $text-white: #f1f2f6;
 $bg: #f3eed3;
 
-.card {
-    margin-top: 80px;
+.cards {
+    margin: 120px 150px 50px 50px;
+    background-color: #fff;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
     .full-article {
         border-bottom: 5px solid $primary-color;
         transition: background-color 2s;
@@ -24,7 +28,8 @@ $bg: #f3eed3;
                 text-decoration: none;
                 transition: color 2s;
                 &:hover {
-                    color: $color-1st;
+                    color: $text-white;
+                    font-size: larger;
                 }
             }
     }
