@@ -1,0 +1,33 @@
+$primary-color: rgba(255,0,132,1);
+$secondary-color: #ff3838;
+$accent-color: #fffa65;
+$color-1st: #6C63FF;
+$text-primary: #3d3d3d;
+$text-secondary: #747d8c;
+$text-white: #f1f2f6;
+$bg: #f3eed3;
+
+.contact {
+    margin: 120px 150px 50px 50px;
+    padding: 20px;
+    .full-article {
+        border-bottom: 5px solid $primary-color;
+        transition: background-color 2s;
+        width: 50%;
+        height: 100%;
+        padding: 15px 10px 10px 10px;
+        text-align: center;
+            &:hover {
+                background-color: $primary-color;
+            }
+            a {
+                color: #3d3d3d;
+                text-decoration: none;
+                transition: color 2s;
+                &:hover {
+                    color: $text-white;
+                    font-size: larger;
+                }
+            }
+    }
+}
