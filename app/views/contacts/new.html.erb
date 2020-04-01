@@ -1,25 +1,47 @@
 <% provide(:name, "Reach out to me") %>
 
 <section class="contact container">
+	<div>Check out my works or reach out to me at:</div>
+	<div class="socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-medium"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+	</div>
+	<div>or send me a message: </div>
+
+
 	<%= form_for @contact do |f| %>
+		<div class="form-group">
 		<%= f.label :name %><br>
-		<%= f.text_field :name, required: true %>
-
+		<%= f.text_field :name, required: true, class: "form-control", placeholder: "John Doe" %>
+		</div>
+		
 		<br>
 
+		<div class="form-group">
 		<%= f.label :email %><br>
-		<%= f.email_field :email, required: true %>
+		<%= f.email_field :email, required: true, class: "form-control", placeholder: "janedoe@example.com" %>
+		</div>
+		
 
 		<br>
 
+		<div class="form-group">
 		<%= f.label :message %><br>
-		<%= f.text_area :message, as: :text %>
+		<%= f.text_area :message, as: :text, class: "form-control", id: "exampleFormControlTextarea1", placeholder: "Lorem ipsum dolor sit", rows: 3 %>
+		</div>
+		
+		
 
-		<div class="hidden">
+		<div class="hidden form-group">
 			<%= f.label :nickname %><br>
-			<%= f.text_field :nickname, hint: 'leave this field blank' %>
+			<%= f.text_field :nickname, hint: 'leave this field blank', class: "form-control" %>
 		</div>
 
-		<%= f.submit 'Send Message', class: "button" %>
+		<%= f.submit 'Send Message', class: "btn btn-primary" %>
 	<% end %>
+
 </section>
