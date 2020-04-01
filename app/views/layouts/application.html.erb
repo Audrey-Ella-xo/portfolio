@@ -24,8 +24,10 @@
         <li></li>
       </ul>
     </div >
+    <% unless action_name == "home" %>
+      <%= render 'layouts/header' %>
+    <% end %>
     <%= render 'layouts/sidebar' %>
-    <%= render 'layouts/header' %>
   
     <main class="container context">
       <% flash.each do |message_type, message| %>
