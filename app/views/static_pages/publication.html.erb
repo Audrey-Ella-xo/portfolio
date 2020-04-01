@@ -1,2 +1,22 @@
-<h1>StaticPages#publication</h1>
-<p>Find me in app/views/static_pages/publication.html.erb</p>
+<% provide(:name, "My published articles") %>
+
+<section class="publication">
+
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                  <%=image_tag("visual-heirarchy.jpg", alt: "...", class: "card-img img-responsive")%>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Best Way to Make Your Design Communicate</h5>
+                      <p class="card-text"><small class="text-muted">Nov 30, 2019</small></p>
+                      <p class="card-text">Visual hierarchy is one of the most important principles behind effective web design. I say this because the goal...</p>
+                      <div class="full-article">
+                          <a href="#">READ THE FULL ARTICLE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>

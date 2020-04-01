@@ -1,0 +1,41 @@
+$primary-color: rgba(255,0,132,1);
+$secondary-color: #ff3838;
+$accent-color: #fffa65;
+$color-1st: #6C63FF;
+$text-primary: #3d3d3d;
+$text-secondary: #747d8c;
+$text-white: #f1f2f6;
+$bg: #f3eed3;
+
+.featured-works {
+    margin-bottom: 100px;
+}
+.detail {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: $primary-color;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    padding-top: 150px;
+    a {
+        color: $primary-color;
+      }
+}
+.carousel {
+    margin: 20px 200px;
+}
+.project {
+        position: relative;
+    overflow: hidden;
+    a img {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover .detail {
+        display: block;
+    }
+}  

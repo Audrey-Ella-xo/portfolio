@@ -21,14 +21,16 @@ header {
         font-size: 80px;
         color: rgba(255, 255, 255, 0.164);
     }
+    .bgtext {
+        margin-left: -60px;
+    }
 }
-.personal-info {
+section {
     margin: 120px 150px 50px 50px;
     padding: 0 50px;
+}
+.personal-info {
+    
     background-color: white;
     color: black;
-}
-.navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
 }
