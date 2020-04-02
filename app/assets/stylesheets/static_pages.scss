@@ -7,6 +7,7 @@
 @import "animate";
 
 $primary-color: rgba(255,0,132,1);
+$darker-primary: darken($color: rgba(255,0,132,1), $amount: 10);
 $secondary-color: #ff3838;
 $accent-color: #fffa65;
 $color-1st: #6C63FF;

@@ -1,18 +1,10 @@
-<% provide(:name, "Reach out to me") %>
+<% provide(:name, "Let's work together") %>
 
 <section class="contact container">
-	<div>Check out my works or reach out to me at:</div>
-	<div class="socials">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-medium"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
-        <a href="#"><i class="fab fa-skype"></i></a>
-	</div>
-	<div>or send me a message: </div>
-
-
+<div>
+  <div class="row">
+    <div class="col-md-6 message">
+	<div class = "dm">Send me a direct message: </div>
 	<%= form_for @contact do |f| %>
 		<div class="form-group">
 		<%= f.label :name %><br>
@@ -41,5 +33,35 @@
 
 		<%= f.submit 'Send Message', class: "btn btn-primary" %>
 	<% end %>
+	</div>
+	
+	<div class="social-box col-md-6">
+	<ul>
+	<li>
+		<p>Phone</p>
+		<p><a href="tel://234-705-430-4248">(+234) 705 430 4248</a></p>
+	</li>
+	<li>
+		<p>Email</p>
+		<p><a href="mailto:anitaudrey@gmail.com">anitaudrey@gmail.com</a></p>
+	</li>
+	<li>
+		<p>Projects</p>
+		<p><a href="https://github.com/Audrey-Ella-xo">https://github.com/Audrey-Ella-xo</a></p>
+		
+	</li>
+	</ul>
+		<div class="dmme">Or reach me via my social media handles </div>
+		<div class="socials">
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-linkedin"></i></a>
+			<a href="#"><i class="fab fa-github"></i></a>
+			<a href="#"><i class="fab fa-medium"></i></a>
+			<a href="#"><i class="fas fa-envelope"></i></a>
+			<a href="#"><i class="fab fa-skype"></i></a>
+		</div>
+    </div>
+  </div>
+</div>
 
 </section>

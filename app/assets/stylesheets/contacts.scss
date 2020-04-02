@@ -1,4 +1,5 @@
 $primary-color: rgba(255,0,132,1);
+$darker-primary: darken($color: rgba(255,0,132,1), $amount: 10);
 $secondary-color: #ff3838;
 $accent-color: #fffa65;
 $color-1st: #6C63FF;
@@ -10,24 +11,67 @@ $bg: #f3eed3;
 .contact {
     margin: 120px 150px 50px 50px;
     padding: 20px;
-    .full-article {
-        border-bottom: 5px solid $primary-color;
-        transition: background-color 2s;
+    .btn {
+        background-color: $primary-color;
+        border: $primary-color;
+        transition: background-color 1s;
         width: 50%;
         height: 100%;
         padding: 15px 10px 10px 10px;
         text-align: center;
-            &:hover {
-                background-color: $primary-color;
-            }
-            a {
-                color: #3d3d3d;
-                text-decoration: none;
-                transition: color 2s;
-                &:hover {
-                    color: $text-white;
-                    font-size: larger;
+        &:hover {
+            background-color: $darker-primary;
+            font-size: larger;
+        }
+    }
+    .message {
+        padding-right: 50px;
+    }
+    .dm {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .dmme {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+    .social-box {
+        margin-top: 50px;
+        ul {
+            list-style-type: none;
+            li {
+                border-left: 5px solid $text-white;
+                padding-left: 20px;
+                p {
+                    font-weight: 600;
+                    font-size: 14px;
+                    &:nth-child(2){
+                        margin-top: -19px;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    a {
+                        color: $text-white;
+                        &:hover {
+                            text-decoration: none;
+                            color: $darker-primary;
+                        }
+                    }
                 }
             }
+        }
+        .socials {
+            a {
+                color: $text-white;
+                font-size: 20px;
+                padding: 0 15px;
+                border: 2px solid $text-white;
+                border-radius: 5px;
+                &:hover {
+                    color: darken($color: rgba(255,0,132,1), $amount: 10);;
+                }
+            }
+        }
     }
 }
