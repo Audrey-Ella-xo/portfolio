@@ -1,0 +1,193 @@
+$primary-color: rgba(255,0,132,1);
+$darker-primary: darken($color: rgba(255, 0, 132, 0.479), $amount: 10);
+$secondary-color: #ff3838;
+$accent-color: #fffa65;
+$color-1st: #6C63FF;
+$text-primary: #3d3d3d;
+$text-secondary: #747d8c;
+$text-white: #f1f2f6;
+$bg: #f3eed3;
+.home {
+  margin-left: 100px;
+  padding: 0 20px;
+  
+  .img {
+    margin: 30px auto;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  
+
+.row {
+  background-color: $darker-primary;
+  padding-left: 40px;
+  margin-left: -20px;
+  .p {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  .gtnm {
+    &:after {
+      content: '>>>';
+      position: absolute;
+      color: $text-white;
+      font-size: 47px;
+      top: 67vh;
+      line-height: 40px;
+      
+      -webkit-animation-name: opacity;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: opacity;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+    
+.stack {
+    
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+  
+  &__wrapper {
+    overflow: hidden;
+    height: 50px;
+    // padding: 0 40px;
+  
+    &__text {
+      display: inline;
+      margin: 0;
+    }
+
+    &__list {
+      margin-top: 0;
+      // padding-left: 110px;
+      text-align: left;
+      list-style: none;
+      
+      -webkit-animation-name: change;
+      -webkit-animation-duration: 10s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: change;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+
+      &__item {
+        line-height: 40px;
+        width: 600px;
+        padding: 10px 0 10px 50px;
+        line-height:40px;
+        margin-left: 70px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+
+  0%, 7.50%, 100% {transform:translate3d(0,0,0);}
+  12.50%, 20.00% {transform:translate3d(0,-20%,0);}
+  25.00%, 32.50% {transform:translate3d(0,-40%,0);}
+  37.50%, 45.00% {transform:translate3d(0,-60%,0);}
+  50.00%,57.50% {transform:translate3d(0,-80%,0);}
+  62.50%,70.00% {transform:translate3d(0,-60%,0);}
+  75.00%,82.50% {transform:translate3d(0,-40%,0);}
+  87.50%,92.50% {transform:translate3d(0,-20%,0);}
+
+}
+
+@-o-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-o-keyframes change {
+  
+  0%, 7.50%, 100% {transform:translate3d(0,0,0);}
+  12.50%, 20.00% {transform:translate3d(0,-20%,0);}
+  25.00%, 32.50% {transform:translate3d(0,-40%,0);}
+  37.50%, 45.00% {transform:translate3d(0,-60%,0);}
+  50.00%,57.50% {transform:translate3d(0,-80%,0);}
+  62.50%,70.00% {transform:translate3d(0,-60%,0);}
+  75.00%,82.50% {transform:translate3d(0,-40%,0);}
+  87.50%,92.50% {transform:translate3d(0,-20%,0);}
+}
+
+@-moz-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-moz-keyframes change {
+  
+  0%, 7.50%, 100% {transform:translate3d(0,0,0);}
+  12.50%, 20.00% {transform:translate3d(0,-20%,0);}
+  25.00%, 32.50% {transform:translate3d(0,-40%,0);}
+  37.50%, 45.00% {transform:translate3d(0,-60%,0);}
+  50.00%,57.50% {transform:translate3d(0,-80%,0);}
+  62.50%,70.00% {transform:translate3d(0,-60%,0);}
+  75.00%,82.50% {transform:translate3d(0,-40%,0);}
+  87.50%,92.50% {transform:translate3d(0,-20%,0);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+
+  0%, 7.50%, 100% {transform:translate3d(0,0,0);}
+  12.50%, 20.00% {transform:translate3d(0,-20%,0);}
+  25.00%, 32.50% {transform:translate3d(0,-40%,0);}
+  37.50%, 45.00% {transform:translate3d(0,-60%,0);}
+  50.00%,57.50% {transform:translate3d(0,-80%,0);}
+  62.50%,70.00% {transform:translate3d(0,-60%,0);}
+  75.00%,82.50% {transform:translate3d(0,-40%,0);}
+  87.50%,92.50% {transform:translate3d(0,-20%,0);}
+
+}
+
+// 6 is the number of animation.
+// Here, there are 4 lines :
+
+// 1 to 2
+// 2 to 3
+// 3 to 4
+// 4 to 3
+// 3 to 2
+// 2 to 1
+
+// 6x + 6y = 100 (100% duration)
+
+// HERE : 
+// y = 4 -> Animation between two lines
+// x = 12.66 -> Time spent on a line
+
+// You can define a value and calculate the other if you want change speed or the number of lines
+// To add more lines:
+// no 0f animation = 6+2+2(n times)
+// exchange 6 with new no of animations in equation above to get new speed 
+//duration has to always be withing 100%
+
+}
+}
+.imgg {
+  position: absolute;
+  top: 92vh;
+  left: 0;
+  background: url(rsz_code-illustration.png);
+  height: 50px;
+  width: 100%;
+  overflow-x: hidden;
+  // background-image: url("./images/rsz_code-illustration.png");
+  // background-color: whitesmoke;
+}
