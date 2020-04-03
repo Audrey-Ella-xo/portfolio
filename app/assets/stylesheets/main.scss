@@ -18,6 +18,7 @@ header {
     background: -o-linear-gradient(left, #F7B3C4 0%, rgba(255,0,132,1) 100%);
     background: -ms-linear-gradient(left, #F7B3C4 0%, rgba(255,0,132,1) 100%);
     background: linear-gradient(to right, #F7B3C4 0%, rgba(255,0,132,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcccc', endColorstr='#ff0084', GradientType=1 );
     .content {
         font-weight: bolder;
         font-size: 80px;
@@ -29,9 +30,11 @@ header {
 }
 
 .personal-info {
-    margin: 120px 150px 50px 50px;
-    padding: 0 50px;
-    background-color: white;
-    color: black;
+    margin: 120px 150px 50px 0;
+    padding: 10px 50px;
+    background-color: rgba(255, 0, 132, 0.52);
+    font-size: 500;
+    font-weight: bolder;
+    color: $text-white;
     border-radius: 10px;
 }

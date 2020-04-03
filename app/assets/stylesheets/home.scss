@@ -1,7 +1,7 @@
 $primary-color: rgba(255,0,132,1);
 $darker-primary: darken($color: rgba(255, 0, 132, 0.479), $amount: 10);
 $secondary-color: #ff3838;
-$accent-color: #fffa65;
+$accent-color: rgba(255, 0, 132, 0.52);
 $color-1st: #6C63FF;
 $text-primary: #3d3d3d;
 $text-secondary: #747d8c;
@@ -15,6 +15,8 @@ $bg: #f3eed3;
     margin: 30px auto;
     width: 200px;
     border-radius: 50%;
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(15, 15, 15, 0.767);
   }
 
   

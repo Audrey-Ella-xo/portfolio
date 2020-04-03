@@ -1,7 +1,7 @@
 $primary-color: rgba(255,0,132,1);
 $darker-primary: darken($color: rgba(255,0,132,1), $amount: 10);
 $secondary-color: #ff3838;
-$accent-color: #fffa65;
+$accent-color: rgba(255, 0, 132, 0.52);
 $color-1st: #6C63FF;
 $text-primary: #3d3d3d;
 $text-secondary: #747d8c;
@@ -12,7 +12,7 @@ $bg: #f3eed3;
     margin: 120px 150px 50px 50px;
     background-color: #fff;
     padding: 20px;
-    color: black;
+    color: $text-primary;
     border-radius: 10px;
     .full-article {
         border-bottom: 5px solid $primary-color;
@@ -25,7 +25,7 @@ $bg: #f3eed3;
                 background-color: $primary-color;
             }
             a {
-                color: #3d3d3d;
+                color: $text-secondary;
                 text-decoration: none;
                 transition: color 2s;
                 &:hover {
