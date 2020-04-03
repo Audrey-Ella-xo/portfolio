@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get    '/publication',    to: 'static_pages#publication'
   get    '/contact',    to: 'contacts#new'
   get    '/about',    to: 'static_pages#about'
+  get 'download_pdf', to: "static_pages#download_pdf"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

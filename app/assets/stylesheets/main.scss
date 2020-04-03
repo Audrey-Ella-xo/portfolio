@@ -33,8 +33,34 @@ header {
     margin: 120px 150px 50px 0;
     padding: 10px 50px;
     background-color: rgba(255, 0, 132, 0.52);
+    height: 80vh;
+    overflow-y: scroll;
     font-size: 500;
     font-weight: bolder;
     color: $text-white;
     border-radius: 10px;
+    text-align: justify;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    .full-article {
+        border-bottom: 5px solid $text-white;
+        transition: background-color 2s;
+        width: 50%;
+        height: 50px;
+        padding: 15px 10px 10px 10px;
+        text-align: center;
+            &:hover {
+                background-color: $text-white;
+            }
+            a {
+                color: $text-white;
+                text-decoration: none;
+                transition: color 2s;
+                &:hover {
+                    color: $primary-color;
+                    font-size: larger;
+                }
+            }
+    }
 }
