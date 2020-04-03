@@ -12,6 +12,6 @@ class StaticPagesController < ApplicationController
   end
 
   def download_pdf
-    send_file "#{Rails.root}/app/assets/docs/resume.pdf", type: "application/pdf", x_sendfile: true
+    send_file "#{Rails.root}/app/assets/docs/resume.pdf", type: "application/pdf", :disposition => 'inline', x_sendfile: true
   end
 end
