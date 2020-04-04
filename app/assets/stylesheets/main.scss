@@ -40,9 +40,12 @@ header {
     color: $text-white;
     border-radius: 10px;
     text-align: justify;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
     &::-webkit-scrollbar {
         display: none;
       }
+    
     .full-article {
         border-bottom: 5px solid $text-white;
         transition: background-color 2s;
