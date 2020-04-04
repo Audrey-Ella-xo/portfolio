@@ -188,9 +188,9 @@ $bg: #f3eed3;
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 767px) {
   .imgg {
-    display: none;
+    margin-left: -30px;
   }
 
   .home {
