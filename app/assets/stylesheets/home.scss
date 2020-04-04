@@ -33,10 +33,9 @@ $bg: #f3eed3;
   .gtnm {
     &:after {
       content: '>>>';
-      position: absolute;
+      
       color: $text-white;
       font-size: 47px;
-      top: 67vh;
       line-height: 40px;
       
       -webkit-animation-name: opacity;
@@ -57,7 +56,6 @@ $bg: #f3eed3;
   &__wrapper {
     overflow: hidden;
     height: 50px;
-    // padding: 0 40px;
   
     &__text {
       display: inline;
@@ -66,7 +64,6 @@ $bg: #f3eed3;
 
     &__list {
       margin-top: 0;
-      // padding-left: 110px;
       text-align: left;
       list-style: none;
       
@@ -78,7 +75,6 @@ $bg: #f3eed3;
       animation-iteration-count: infinite;
 
       &__item {
-        line-height: 40px;
         width: 600px;
         padding: 10px 0 10px 50px;
         line-height:40px;
@@ -190,6 +186,43 @@ $bg: #f3eed3;
   height: 50px;
   width: 100%;
   overflow-x: hidden;
-  // background-image: url("./images/rsz_code-illustration.png");
-  // background-color: whitesmoke;
+}
+
+@media screen and (max-width: 730px) {
+  .imgg {
+    display: none;
+  }
+
+  .home {
+    margin-left: 0;
+    margin-right: 30px;
+    .img {
+      width: 100px;
+      margin-top: 70px;
+    }
+    .row {
+      .p {
+        font-size: 12px;
+      }
+      .gtnm {
+        &:after {          
+          color: $text-white;
+          font-size: 16px;
+        }
+      }
+      .stack {
+        font-size: 12px;
+        &__wrapper {
+          height: 30px;
+      
+          &__list {
+            &__item {
+              padding: 0 0 0 50px;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }

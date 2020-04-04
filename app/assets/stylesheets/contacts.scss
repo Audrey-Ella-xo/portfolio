@@ -82,3 +82,13 @@ $bg: #f3eed3;
         }
     }
 }
+
+@media screen and (max-width: 730px) {
+    .contact {
+        margin: 50px 150px 50px 50px;
+        height: 67vh;
+        .social-box ul li p {
+            padding-bottom: 10px;
+        }
+    }
+}
