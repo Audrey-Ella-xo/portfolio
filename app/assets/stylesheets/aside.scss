@@ -17,7 +17,7 @@ aside {
     z-index:5;
     outline:none;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 100px;
     text-align: center;
     color: $text-primary;
     background-color: $accent-color;
@@ -57,4 +57,8 @@ aside {
             }
         }
     }
+}
+
+@media only screen and (min-width:767px) and (max-width:992px) {
+
 }

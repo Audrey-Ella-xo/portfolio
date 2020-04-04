@@ -21,7 +21,7 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcccc', endColorstr='#ff0084', GradientType=1 );
     .content {
         font-weight: bolder;
-        font-size: 80px;
+        font-size: 7vw;
         color: rgba(255, 255, 255, 0.164);
     }
     .bgtext {
@@ -30,7 +30,7 @@ header {
 }
 
 .personal-info {
-    margin: 120px 150px 50px 0;
+    margin: 150px 150px 50px 0;
     padding: 10px 50px;
     background-color: rgba(255, 0, 132, 0.52);
     height: 80vh;
@@ -65,12 +65,9 @@ header {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     header {
         margin-left: 0;
-        .content {
-            font-size: 20px;
-        }
         .bgtext {
             margin-left: -100px;
             padding-top: 10px;
@@ -84,6 +81,26 @@ header {
         .full-article {
             a {
                 font-size: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:992px) {
+    header {
+        .bgtext {
+            margin-left: -90px;
+            padding-top: 10px;
+        }
+    }
+
+    .personal-info {
+        margin: 120px 50px 50px 0;
+        padding: 10px 30px;
+        height: 77vh;
+        .full-article {
+            a {
+                font-size: 16px;
             }
         }
     }

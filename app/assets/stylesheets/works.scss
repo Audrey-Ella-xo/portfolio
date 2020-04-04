@@ -9,6 +9,7 @@ $text-white: #f1f2f6;
 $bg: #f3eed3;
 
 .featured-works {
+    margin-top: 50px;
     padding: 0 50px;
 }
 .detail {
@@ -92,5 +93,35 @@ $bg: #f3eed3;
     .wct {
         height: 65vh;
         padding-top: 60px;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:992px) {
+    .featured-works {
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .ptext {
+        left: 55vw;
+        ul li {
+            padding: 4px;
+            font-size: 10px;
+        }
+    }
+    .detail {
+        a {
+            font-size: 18px;
+            &:hover {
+                font-size: 20px;
+            }
+          }
+    }
+
+    .wct {
+        height: 90vh;
+        padding-top: 60px;
+        margin-left: -30px;
+        padding: 0 20px;
     }
 }
