@@ -98,6 +98,7 @@ $bg: #f3eed3;
             font-size: 10px;
             line-height: 1.2em;
             width: 60%;
+            margin-top: -50px;
         }
     }
 
@@ -114,14 +115,16 @@ $bg: #f3eed3;
         margin-top: 100px;
     }
     .ptext {
-        left: 40vw;
+        left: 45vw;
         padding: 3px;
+        top: 12px;
         ul li {
             padding: 4px;
             font-size: 10px;
         }
     }
     .detail {
+        padding-top: 14vw;
         a {
             font-size: 18px;
             &:hover {
