@@ -6,10 +6,10 @@
 @import "font-awesome";
 @import "animate";
 
-$primary-color: rgba(255,0,132,1);
-$darker-primary: darken($color: rgba(255,0,132,1), $amount: 10);
+$primary-color: rgba(40,8,71,1);
+$darker-primary: darken($color: rgba(40,8,71,1), $amount: 10);
 $secondary-color: #ff3838;
-$accent-color: rgba(255, 0, 132, 0.52);
+$accent-color: rgba(40,8,71, 0.52);
 $color-1st: #6C63FF;
 $text-primary: #3d3d3d;
 $text-secondary: #747d8c;
@@ -107,14 +107,14 @@ a {
 }
 
 .area{
-    background: rgba(255,204,204,1);
-    background: -moz-linear-gradient(left, rgba(255,204,204,1) 0%, rgba(255,0,132,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,204,204,1)), color-stop(100%, rgba(255,0,132,1)));
-    background: -webkit-linear-gradient(left, rgba(255,204,204,1) 0%, rgba(255,0,132,1) 100%);
-    background: -o-linear-gradient(left, rgba(255,204,204,1) 0%, rgba(255,0,132,1) 100%);
-    background: -ms-linear-gradient(left, rgba(255,204,204,1) 0%, rgba(255,0,132,1) 100%);
-    background: linear-gradient(to right, rgba(255,204,204,1) 0%, rgba(255,0,132,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcccc', endColorstr='#ff0084', GradientType=1 );
+    background: rgba(97,23,115,1);
+    background: -moz-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(97,23,115,1)), color-stop(99%, rgba(40,8,71,1)), color-stop(100%, rgba(40,8,71,1)));
+    background: -webkit-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    background: -o-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    background: -ms-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    background: linear-gradient(to right, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#611773', endColorstr='#280847', GradientType=1 );
     width: 100%;
     height:100vh;
     background-size: cover;

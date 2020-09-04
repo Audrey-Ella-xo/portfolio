@@ -1,5 +1,5 @@
-$primary-color: rgba(255,0,132,1);
-$darker-primary: darken($color: rgba(255,0,132,1), $amount: 10);
+$primary-color: rgba(40,8,71,1);
+$darker-primary: darken($color: rgba(40,8,71,1), $amount: 10);
 $secondary-color: #ff3838;
 $accent-color: #fffa65;
 $color-1st: #6C63FF;
@@ -11,14 +11,14 @@ $bg: #f3eed3;
 header {
     width: 100%;
     margin-left: 130px;
-    background: #F7B3C4;
-    background: -moz-linear-gradient(left, #F7B3C4 0%, rgba(255,0,132,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #F7B3C4), color-stop(100%, rgba(255,0,132,1)));
-    background: -webkit-linear-gradient(left, #F7B3C4 0%, rgba(255,0,132,1) 100%);
-    background: -o-linear-gradient(left, #F7B3C4 0%, rgba(255,0,132,1) 100%);
-    background: -ms-linear-gradient(left, #F7B3C4 0%, rgba(255,0,132,1) 100%);
-    background: linear-gradient(to right, #F7B3C4 0%, rgba(255,0,132,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcccc', endColorstr='#ff0084', GradientType=1 );
+    background: rgba(97,23,115,1);
+    background: -moz-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(97,23,115,1)), color-stop(99%, rgba(40,8,71,1)), color-stop(100%, rgba(40,8,71,1)));
+    background: -webkit-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    background: -o-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    background: -ms-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    background: linear-gradient(to right, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#611773', endColorstr='#280847', GradientType=1 );
     .content {
         font-weight: bolder;
         font-size: 7vw;
@@ -32,7 +32,7 @@ header {
 .personal-info {
     margin: 150px 150px 50px 0;
     padding: 10px 50px;
-    background-color: rgba(255, 0, 132, 0.52);
+    background-color: rgba(40,8,71, 0.52);
     height: 80vh;
     overflow-y: scroll;
     font-size: 500;
