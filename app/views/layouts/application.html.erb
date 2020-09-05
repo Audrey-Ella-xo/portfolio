@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme='dark'>
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
@@ -24,6 +24,7 @@
         <li></li>
       </ul>
     </div >
+   
     <% unless action_name == "home" %>
       <%= render 'layouts/header' %>
     <% end %>
@@ -36,6 +37,27 @@
       <%= yield %>
     </main>
     <%= render 'layouts/footer' %>
+
+    <script type="text/javascript">
+      var checkbox = document.getElementById('switch');
+
+      checkbox.addEventListener('change', function() {
+          if(this.checked) {
+              trans()
+              document.documentElement.setAttribute('data-theme', 'light')
+          } else {
+              trans()
+              document.documentElement.setAttribute('data-theme', 'dark')
+          }
+      })
+
+      let trans = () => {
+          document.documentElement.classList.add('transition');
+          window.setTimeout(() => {
+              document.documentElement.classList.remove('transition')
+          }, 1000)
+      }
+    </script>
     
   </body>
 </html>

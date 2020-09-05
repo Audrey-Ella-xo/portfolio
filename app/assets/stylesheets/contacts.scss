@@ -10,6 +10,7 @@ $bg: #f3eed3;
 
 .contact {
     margin: 120px 150px 50px 50px;
+    color: var(--pri-color);
     padding: 20px;
     .btn {
         background-color: $primary-color;
@@ -48,7 +49,7 @@ $bg: #f3eed3;
         ul {
             list-style-type: none;
             li {
-                border-left: 5px solid $text-white;
+                border-left: 5px solid var(--pri-color);
                 padding-left: 20px;
                 p {
                     font-weight: 600;
@@ -59,7 +60,7 @@ $bg: #f3eed3;
                         font-weight: 700;
                     }
                     a {
-                        color: $text-white;
+                        color: var(--pri-color);
                         &:hover {
                             text-decoration: none;
                             color: $darker-primary;
@@ -70,10 +71,10 @@ $bg: #f3eed3;
         }
         .socials {
             a {
-                color: $text-white;
+                color: var(--pri-color);
                 font-size: 20px;
                 padding: 0 15px;
-                border: 2px solid $text-white;
+                border: 2px solid var(--pri-color);
                 border-radius: 5px;
                 &:hover {
                     color: darken($color: rgba(40,8,71,1), $amount: 10);;

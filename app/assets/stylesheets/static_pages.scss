@@ -16,6 +16,34 @@ $text-secondary: #747d8c;
 $text-white: #f1f2f6;
 $bg: #f3eed3;
 
+html {
+    --header-color: rgba(255, 255, 255, 0.164);
+    --circle: rgba(255, 255, 255, 0.2);
+    --pri-color: #f1f2f6;
+    --bgc: rgba(97,23,115,1);
+    --bgc-mlg: -moz-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    --bgc-wg: -webkit-gradient(left top, right top, color-stop(0%, rgba(97,23,115,1)), color-stop(99%, rgba(40,8,71,1)), color-stop(100%, rgba(40,8,71,1)));
+    --bgc-wlg: -webkit-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    --bgc-olg: -o-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    --bgc-mslg: -ms-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    --bgc-lg: linear-gradient(to right, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
+    --filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#611773', endColorstr='#280847', GradientType=1 );
+}
+
+html[data-theme='light'] {
+    --header-color: rgba(10, 10, 10, 0.164);
+    --circle: rgba(51, 3, 73, 0.2);
+    --pri-color: rgba(40,8,71,1);
+    --bgc: rgba(255,255,255,1);
+    --bgc-mlg: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    --bgc-wg: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    --bgc-wlg: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    --bgc-olg: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    --bgc-mslg: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    --bgc-lg: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    --filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+
 /* universal */
 
 *{
@@ -107,14 +135,14 @@ a {
 }
 
 .area{
-    background: rgba(97,23,115,1);
-    background: -moz-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(97,23,115,1)), color-stop(99%, rgba(40,8,71,1)), color-stop(100%, rgba(40,8,71,1)));
-    background: -webkit-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
-    background: -o-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
-    background: -ms-linear-gradient(left, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
-    background: linear-gradient(to right, rgba(97,23,115,1) 0%, rgba(40,8,71,1) 99%, rgba(40,8,71,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#611773', endColorstr='#280847', GradientType=1 );
+    background: var(--bgc);
+    background: var(--bgc-mlg);
+    background: var(--bgc-wg);
+    background: var(--bgc-wlg);
+    background: var(--bgc-olg);
+    background: var(--bgc-mslg);
+    background: var(--bgc-lg);
+    filter: var(--filter);
     width: 100%;
     height:100vh;
     background-size: cover;
@@ -131,7 +159,7 @@ a {
             list-style: none;
             width: 20px;
             height: 20px;
-            background: rgba(255, 255, 255, 0.2);
+            background: var(--circle);
             animation: animate 25s linear infinite;
             bottom: -150px;
             &:nth-child(1){
