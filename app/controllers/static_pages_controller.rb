@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class StaticPagesController < ApplicationController
+class StaticPagesController < ApplicationController # rubocop:disable Style/Documentation
   def home; end
 
   def works; end

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ApplicationHelper
+module ApplicationHelper # rubocop:disable Style/Documentation
   def full_title(page_title = '')
     base_title = 'Audrey-Ella-xo'
     if page_title.empty?
