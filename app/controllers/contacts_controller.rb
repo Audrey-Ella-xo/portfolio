@@ -1,10 +1,13 @@
+# frozen_string_literal: true
+
+# Your Comment
 class ContactsController < ApplicationController
   def new
-		@contact = Contact.new
-	end
+    @contact = Contact.new
+  end
 
-	def create
-		@contact = Contact.new(params[:contact])
+  def create
+    @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
       flash.now[:error] = nil
@@ -12,5 +15,5 @@ class ContactsController < ApplicationController
       flash.now[:error] = 'Cannot send message.'
       render :new
     end
-	end
+  end
 end
