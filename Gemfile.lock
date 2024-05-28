@@ -391,7 +391,7 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   turbolinks
   tzinfo-data
-  web-console
+  web-console (>= 3.3.0)
   webdrivers
 
 RUBY VERSION
